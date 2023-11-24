@@ -1,0 +1,49 @@
+.file-list-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.file-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.file-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.file-name {
+  font-weight: bold;
+}
+
+.file-size {
+  font-style: italic;
+  color: #555;
+}
+
+.preview-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.preview-button:hover {
+  background-color: #45a049;
+}
+
+.no-files {
+  color: #888;
+  font-style: italic;
+}
