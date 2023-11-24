@@ -11,19 +11,7 @@ This application allows users to upload PDF files through a React frontend and m
 
 ### Backend Setup
 
-1. Navigate to the backend directory:
-
-   ```bash
-   cd path/to/your/backend
-   ```
-
-2. Install the necessary npm packages:
-
-   ```bash
-   npm install
-   ```
-
-3. Create a `.env` file in the backend directory to store environment variables:
+1. Create a `.env` file in the backend directory to store environment variables:
 
    ```env
    PORT=5000
@@ -32,53 +20,19 @@ This application allows users to upload PDF files through a React frontend and m
 
    Replace the `MONGO_URI` value with your MongoDB connection string if it's different.
 
-### Frontend Setup
-
-1. Navigate to the frontend directory:
-
-   ```bash
-   cd path/to/your/frontend
-   ```
-
-2. Install the necessary npm packages:
-
-   ```bash
-   npm install
-   ```
-
 ## Running the Application
 
-### Start the Backend Server
-
-1. Navigate to the backend directory:
+1. Clone the repository
 
    ```bash
-   cd path/to/your/backend
+   git clone https://github.com/Shoebtamboli/mern-stack-pdf-upload.git
    ```
 
-2. Start the server:
+2. Run the command
 
    ```bash
-   npm start
+   docker-compose up
    ```
-
-   The backend server should now be running on [http://localhost:5000](http://localhost:5000).
-
-### Start the Frontend React App
-
-1. Open a new terminal and navigate to the frontend directory:
-
-   ```bash
-   cd path/to/your/frontend
-   ```
-
-2. Start the React app:
-
-   ```bash
-   npm start
-   ```
-
-   This should open your default web browser to [http://localhost:3000](http://localhost:3000), where you can interact with the application.
 
 ## Features
 
@@ -92,7 +46,3 @@ This application allows users to upload PDF files through a React frontend and m
 - Backend: Node.js, Express.js
 - Database: MongoDB
 - File Storage: Server's filesystem
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
