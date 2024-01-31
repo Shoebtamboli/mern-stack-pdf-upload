@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
 const fileRouter = require("./routes/files");
@@ -10,6 +11,14 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
+//to parse body from url
+app.use(
+  express.urlencoded({
+    extended: false,
+  })
+);
+app.use(bodyParser.json());
+
 app.use("/files", fileRouter);
 // Serve images folder as static
 app.use("/files", express.static(path.join(__dirname, "files")));
