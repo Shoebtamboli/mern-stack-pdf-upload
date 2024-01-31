@@ -6,11 +6,11 @@ services:
     volumes:
       - ./backend:/app
       - /app/node_modules
-      - ./backend/src/files:/app/src/files # Persist the uploads directory
+    # - ./backend/src/files:/app/src/files # Persist the uploads directory
     ports:
       - "5000:5000"
-    depends_on:
-      - mongo
+    # depends_on:
+    #   - mongo
     environment:
       - NODE_ENV=development
     env_file:
@@ -28,7 +28,7 @@ services:
     env_file:
       - ./frontend/.env
 
-  mongo:
-    image: mongo
-    ports:
-      - "27017:27017"
+  # mongo:
+  #   image: mongo
+  #   ports:
+  #     - "27017:27017"
